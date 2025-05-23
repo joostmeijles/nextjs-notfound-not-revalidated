@@ -1,4 +1,5 @@
-/** Add your relevant code here for the issue to reproduce */
+import { notFound } from "next/navigation";
+
 export default function Home() {
-  return null;
+  notFound();
 }
