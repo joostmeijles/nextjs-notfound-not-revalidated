@@ -4,7 +4,6 @@ export default async function Page() {
   const res = await fetch(`https://jsonplaceholder.typicode.com/comments/${id}`, {
     next: {
       tags: ['example-data'], // Attach the revalidate tag
-      revalidate: 10
     },
   });
 
